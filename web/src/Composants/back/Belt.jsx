@@ -4,7 +4,7 @@ const Belt = ({ceinture, barette, second}) => {
   // Définir les styles du rectangle
   const beltStyle = {
     width: '100%', // Largeur du rectangle
-    height: '100px', // Hauteur du rectangle
+    height: '2em', // Hauteur du rectangle
     backgroundColor: ceinture, // Couleur de fond du rectangle
     display: 'flex', // Utilisation de flexbox
     flexDirection: 'row',

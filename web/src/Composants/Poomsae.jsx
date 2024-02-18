@@ -1,10 +1,11 @@
 import React from "react";
-import Belt from "./back/Belt";
+import BeltSelector from "./back/BeltSelector";
 
 const Poomsae = () => {
     return ( <>
-        
-        POOMSAE </> );
+        <BeltSelector />
+        DONE
+         </> );
 }
  
 export default Poomsae;
