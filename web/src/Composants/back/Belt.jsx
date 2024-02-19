@@ -8,6 +8,7 @@ const Belt = ({ceinture, barette, second}) => {
     backgroundColor: ceinture, // Couleur de fond du rectangle
     display: 'flex', // Utilisation de flexbox
     flexDirection: 'row',
+    border: '1px solid',
   };
 
   const baretteStyle = {
