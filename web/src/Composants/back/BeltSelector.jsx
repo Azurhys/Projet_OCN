@@ -46,6 +46,8 @@ const BeltSelector = () => {
         { ceinture: 'red', barette: '', second:'', keup:'3', name: 'Rouge' },
         { ceinture: 'red', barette: 'black', second:'', keup:'2', name: 'Rouge 1 barette' },
         { ceinture: 'red', barette: 'black', second:'black', keup:'1', name: 'Rouge 2 barettes' },
+        { ceinture: 'black', dan:"1", keup:'-', name: '1er Dan' },
+        { ceinture: 'black', dan:"2", keup:'-', name: '2eme Dan' },
     ];
 
     // Gestionnaire de sélection de ceinture
@@ -83,7 +85,7 @@ const BeltSelector = () => {
                                         <tr key={index} onClick={() => handleBeltSelect(belt)}>
                                             <td>{belt.keup}</td>
                                             <td>{belt.name}</td>
-                                            <td><Belt ceinture={belt.ceinture} barette={belt.barette} second={belt.second} /></td> 
+                                            <td><Belt ceinture={belt.ceinture} barette={belt.barette} second={belt.second}  /></td> 
                                         </tr>
                                     ))}
                                 </tbody>
@@ -104,7 +106,7 @@ const BeltSelector = () => {
                                         <tr key={index} onClick={() => handleBeltSelect(belt)}>
                                             <td>{belt.keup}</td>
                                             <td>{belt.name}</td>
-                                            <td><Belt ceinture={belt.ceinture} barette={belt.barette} second={belt.second} /></td> 
+                                            <td><Belt ceinture={belt.ceinture} barette={belt.barette} second={belt.second} dan={belt.dan}/></td> 
                                         </tr>
                                     ))}
                                 </tbody>

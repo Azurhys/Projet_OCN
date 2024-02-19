@@ -1,5 +1,10 @@
+import Belt from "./back/Belt";
+
 const Kibon = () => {
-    return ( <>KIBON</> );
+    return ( <>
+    
+    KIBON
+    </> );
 }
  
 export default Kibon;

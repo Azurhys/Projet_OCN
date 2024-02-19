@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Belt = ({ceinture, barette, second}) => {
+const Belt = ({ceinture, barette, second, dan}) => {
   // Définir les styles du rectangle
   const beltStyle = {
     width: '100%', // Largeur du rectangle
@@ -9,6 +9,7 @@ const Belt = ({ceinture, barette, second}) => {
     display: 'flex', // Utilisation de flexbox
     flexDirection: 'row',
     border: '1px solid',
+    
   };
 
   const baretteStyle = {
@@ -30,10 +31,24 @@ const Belt = ({ceinture, barette, second}) => {
     zIndex: 1,
   };
 
+  const danStyle = {
+    position: 'relative', // Position absolue pour positionner le chiffre
+    top: 0, // Aligner verticalement au centre
+    left: '90%', // Aligner horizontalement au centre
+    color: 'yellow', // Couleur du chiffre
+    fontWeight: 'bold', // Police en gras
+    fontSize: '1em', // Taille de la police
+  };
+
   return (
     <div style={beltStyle}>
         {barette && <div style={baretteStyle} />}
         {second && <div style={secondStyle} />}
+        {dan && (
+          <p style={danStyle}>
+            {dan} {/* Afficher le chiffre jaune */}
+          </p>
+        )}
     </div>
   );
 };
