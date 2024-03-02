@@ -2,15 +2,15 @@ import { useState, useEffect } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import Belt from "./Belt";
 
-const BeltSelector = () => {
+const BeltSelector = ({ onBeltSelect }) => {
     
     const [selectedBelt, setSelectedBelt] = useState(null);
     const [showModal, setShowModal] = useState(false);
     
-    useEffect(() => {
-        console.log(selectedBelt);
-        console.log(showModal)
-    }, [selectedBelt, showModal]);
+    // useEffect(() => {
+    //     console.log(selectedBelt);
+    //     console.log(showModal)
+    // }, [selectedBelt, showModal]);
 
     useEffect(() => {
         setShowModal(true);
@@ -36,24 +36,25 @@ const BeltSelector = () => {
     ];
 
     const adultData = [
-        { ceinture: 'white', barette: '', second:'', keup:'10', name: 'Blanche' },
-        { ceinture: 'yellow', barette: '', second:'', keup:'9', name: 'Jaune' },
-        { ceinture: 'yellow', barette: 'blue', second:'', keup:'8', name: 'Jaune 1 barette' },
-        { ceinture: 'yellow', barette: 'blue', second:'blue', keup:'7', name: 'Jaune 2 barettes' },
-        { ceinture: 'blue', barette: '', second:'', keup:'6', name: 'Bleue' },
-        { ceinture: 'blue', barette: 'red', second:'', keup:'5', name: 'Bleue 1 barette' },
-        { ceinture: 'blue', barette: 'red', second:'red', keup:'4', name: 'Bleue 2 barettes' },
-        { ceinture: 'red', barette: '', second:'', keup:'3', name: 'Rouge' },
-        { ceinture: 'red', barette: 'black', second:'', keup:'2', name: 'Rouge 1 barette' },
-        { ceinture: 'red', barette: 'black', second:'black', keup:'1', name: 'Rouge 2 barettes' },
-        { ceinture: 'black', dan:"1", keup:'-', name: '1er Dan' },
-        { ceinture: 'black', dan:"2", keup:'-', name: '2eme Dan' },
+        { ceinture: 'white', barette: '', second:'', keup:'10', name: 'Blanche', poomsae : 1 },
+        { ceinture: 'yellow', barette: '', second:'', keup:'9', name: 'Jaune', poomsae : 2 },
+        { ceinture: 'yellow', barette: 'blue', second:'', keup:'8', name: 'Jaune 1 barette', poomsae :3 },
+        { ceinture: 'yellow', barette: 'blue', second:'blue', keup:'7', name: 'Jaune 2 barettes', poomsae :4 },
+        { ceinture: 'blue', barette: '', second:'', keup:'6', name: 'Bleue', poomsae :5 },
+        { ceinture: 'blue', barette: 'red', second:'', keup:'5', name: 'Bleue 1 barette', poomsae : 6},
+        { ceinture: 'blue', barette: 'red', second:'red', keup:'4', name: 'Bleue 2 barettes', poomsae :6 },
+        { ceinture: 'red', barette: '', second:'', keup:'3', name: 'Rouge', poomsae : 7},
+        { ceinture: 'red', barette: 'black', second:'', keup:'2', name: 'Rouge 1 barette', poomsae : 8},
+        { ceinture: 'red', barette: 'black', second:'black', keup:'1', name: 'Rouge 2 barettes', poomsae : 8},
+        { ceinture: 'black', dan:"1", keup:'-', name: '1er Dan', poomsae : 9},
+        { ceinture: 'black', dan:"2", keup:'-', name: '2eme Dan', poomsae : 10},
     ];
 
     // Gestionnaire de sélection de ceinture
     const handleBeltSelect = (belt) => {
         setSelectedBelt(belt);
         setShowModal(false);
+        onBeltSelect(belt.poomsae)
     };
 
     // Gestionnaire de fermeture de la modal
@@ -63,10 +64,11 @@ const BeltSelector = () => {
 
     return (
          <div className=''>
-            <button className='btn btn-primary' onClick={() => setShowModal(true)}>
-                Sélectionner une ceinture
-            </button>
-
+            <div className='d-flex justify-content-center my-5'>
+                <button className='btn btn-primary' onClick={() => setShowModal(true)}>
+                    Sélectionner une ceinture
+                </button>
+            </div>
             {showModal &&
                 <div className="card">
                     <div className="card-body d-flex">

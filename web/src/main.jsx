@@ -7,6 +7,7 @@ import Theorie from './Composants/Theorie'
 import Kibon from './Composants/Kibon'
 import Evaluation from './Composants/Evaluation'
 
+import './app.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {  BrowserRouter , Routes , Route } from "react-router-dom"
 
