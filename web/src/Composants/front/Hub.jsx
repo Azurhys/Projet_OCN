@@ -63,7 +63,7 @@ const Hub = () => {
     ];
 
     return (
-        <div style={{ display: 'grid', gridTemplateColumns: 'auto auto', justifyContent: 'center', minHeight: '100vh' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'auto auto', justifyContent: 'center', minHeight: '100vh' }} className="m-0 p-0 vw-100">
             {menuOptions.map((option, index) => (
                 <NavLink 
                     key={index} 

@@ -54,7 +54,7 @@ const BeltSelector = ({ onBeltSelect }) => {
     const handleBeltSelect = (belt) => {
         setSelectedBelt(belt);
         setShowModal(false);
-        onBeltSelect(belt.poomsae)
+        onBeltSelect(belt)
     };
 
     // Gestionnaire de fermeture de la modal

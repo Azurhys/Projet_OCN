@@ -1,4 +1,4 @@
-import Belt from "./back/Belt";
+import Belt from "../back/Belt";
 
 const Kibon = () => {
     return ( <>
