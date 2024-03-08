@@ -7,7 +7,7 @@ const useKibon = () => {
   
     useEffect(() => {
       // Récupérer une référence à l'index Kibon dans la base de données Firebase
-      const kibonRef = ref(database, '/kibon');
+      const kibonRef = ref(database, '/kibon/1dan');
   
       // Écouter les modifications en temps réel sur l'index Kibon
       const unsubscribe = onValue(kibonRef, (snapshot) => {
@@ -20,7 +20,7 @@ const useKibon = () => {
       };
     }, []);
   
-    return data;
+    return { data };
   };
 
 export default useKibon;
