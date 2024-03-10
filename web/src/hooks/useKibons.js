@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 import { getDatabase, ref, onValue } from 'firebase/database';
 import { database } from '../firebase/config';
 
-const useKibon = () => {
+const useKibon = ({ grade }) => {
     const [data, setData] = useState(null);
   
     useEffect(() => {
       // Récupérer une référence à l'index Kibon dans la base de données Firebase
-      const kibonRef = ref(database, '/kibon/1dan');
+      const kibonRef = ref(database, `/kibon/${grade}`);
   
       // Écouter les modifications en temps réel sur l'index Kibon
       const unsubscribe = onValue(kibonRef, (snapshot) => {
@@ -18,7 +18,7 @@ const useKibon = () => {
       return () => {
         unsubscribe(); // Désabonner de tous les écouteurs sur l'index Kibon
       };
-    }, []);
+    }, [ grade ]);
   
     return { data };
   };

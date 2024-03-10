@@ -3,142 +3,126 @@
       {
         "id": 1,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "DWITT KOUBI SEUGUI - HAN SONNAL MOMTONG BAKKAT MAKI",
-        "position": "AP KOUBI SEUGUI - JEBIPOUM MOK TCHIGUI"
+        "enchainement_position": "DWITT KOUBI SEUGUI - HAN SONNAL MOMTONG BAKKAT MAKI - AP KOUBI SEUGUI - JEBIPOUM MOK TCHIGUI"
       },
       {
         "id": 2,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "AP KOUBI SEUGUI - HAN SONNAL EULGOUL BITEURO MAKI",
-        "position": "EULGOUL BANDE JILEUGUI"
+        "enchainement_position": "AP KOUBI SEUGUI - HAN SONNAL EULGOUL BITEURO MAKI - EULGOUL BANDE JILEUGUI"
       },
       {
         "id": 3,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "JOUTCHOUM SEUGUI - HAN SONNAL MOMTONG YOP MAKI",
-        "position": "MOMTOMG YOP JILEUGUI"
+        "enchainement_position": "JOUTCHOUM SEUGUI - HAN SONNAL MOMTONG YOP MAKI - MOMTOMG YOP JILEUGUI"
       },
       {
         "id": 4,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "AP KOUBI SEUGUI - JEBIPOUM MOK TCHIGUI",
-        "position": "DEUNG JOUMOK EULGOUL AP TCHIGUI"
+        "enchainement_position": "AP KOUBI SEUGUI - JEBIPOUM MOK TCHIGUI - DEUNG JOUMOK EULGOUL AP TCHIGUI"
       },
       {
         "id": 5,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "DWITT KOUBI SEUGUI - KEUDEURO MOMTONG BAKKAT MAKI",
-        "position": "AP KOUBI SEUGUI - PALKOUP DOLYEU TCHIGUI"
+        "enchainement_position": "DWITT KOUBI SEUGUI - KEUDEURO MOMTONG BAKKAT MAKI - AP KOUBI SEUGUI - PALKOUP DOLYEU TCHIGUI"
       },
       {
         "id": 6,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "AP KOUBI SEUGUI – MOMTONG HETCHEU MAKI",
-        "position": "DWITT KOA SEUGUI - DOU JOUMOK JETCHEU JILEUGUI"
+        "enchainement_position": "AP KOUBI SEUGUI – MOMTONG HETCHEU MAKI - DWITT KOA SEUGUI - DOU JOUMOK JETCHEU JILEUGUI"
       },
       {
         "id": 7,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "DWITT KOUBI SEUGUI - SONAL ARE MAKI - BEUM SEUGUI",
-        "position": "BATANG SON MOMTONG MAKI"
+        "enchainement_position": "DWITT KOUBI SEUGUI - SONAL ARE MAKI - BEUM SEUGUI - BATANG SON MOMTONG MAKI"
       },
       {
         "id": 8,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "DWITT KOUBI SEUGUI - MOMTONG BAKKAT MAKI",
-        "position": "AP KOUBI SEUGUI - ME JOUMOK NERYOCHIGUI"
+        "enchainement_position": "DWITT KOUBI SEUGUI - MOMTONG BAKKAT MAKI - AP KOUBI SEUGUI - ME JOUMOK NERYOCHIGUI"
       }
     ],
     "enchainements_membres_superieurs_inferieurs_positions": [
       {
         "id": 1,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "AP SEUGUI - HAN SONNAL JEBIPOUM MOK TCHIGUI",
-        "position": "AP TCHAGUI - AP KOUBI SEUGUI - PALKOUP DOLYEU TCHIGUI"
+        "enchainement_position": "AP SEUGUI - HAN SONNAL JEBIPOUM MOK TCHIGUI - AP TCHAGUI - AP KOUBI SEUGUI - PALKOUP DOLYEU TCHIGUI"
       },
       {
         "id": 2,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "AP SEUGUI - DEUNG JOUMOK EULGOUL BAKKAT TCHIGUI",
-        "position": "AP TCHAGUI - AP KOUBI SEUGUI - MOMTONG BARO JILEUGUI"
+        "enchainement_position": "AP SEUGUI - DEUNG JOUMOK EULGOUL BAKKAT TCHIGUI - AP TCHAGUI - AP KOUBI SEUGUI - MOMTONG BARO JILEUGUI"
       },
       {
         "id": 3,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "DWITT KOUBI SEUGUI - HAN SONNAL MOMTONG BAKKAT MAKI",
-        "position": "YOP TCHAGUI - AP KOUBI SEUGUI - PALKOUP MOMTONG PYOJOK TCHIGUI"
+        "enchainement_position": "DWITT KOUBI SEUGUI - HAN SONNAL MOMTONG BAKKAT MAKI - YOP TCHAGUI - AP KOUBI SEUGUI - PALKOUP MOMTONG PYOJOK TCHIGUI"
       },
       {
         "id": 4,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "DWITT KOUBI SEUGUI - SONNAL MOMTONG MAKI",
-        "position": "DOLYEU TCHAGUI - AP KOUBI SEUGUI - EULGOUL BAKKAT MAKI MOMTONG BARO JILEUGUI"
+        "enchainement_position": "DWITT KOUBI SEUGUI - SONNAL MOMTONG MAKI - DOLYEU TCHAGUI - AP KOUBI SEUGUI - EULGOUL BAKKAT MAKI MOMTONG BARO JILEUGUI"
       },
       {
         "id": 5,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "AP KOUBI SEUGUI - HAN SONNAL EULGOUL BITEURO MAKI",
-        "position": "DOLYEU TCHAGUI - MOMTONG BARO JILEUGUI"
+        "enchainement_position": "AP KOUBI SEUGUI - HAN SONNAL EULGOUL BITEURO MAKI - DOLYEU TCHAGUI - MOMTONG BARO JILEUGUI"
       },
       {
         "id": 6,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "AP KOUBI SEUGUI - OWE SAN TEUL MAKI - AP BAL YOP TCHAGUI",
-        "position": "AP KOUBI SEUGUI - JEBIPOUM MOK TCHIGUI"
+        "enchainement_position": "AP KOUBI SEUGUI - OWE SAN TEUL MAKI - AP BAL YOP TCHAGUI - AP KOUBI SEUGUI - JEBIPOUM MOK TCHIGUI"
       },
       {
         "id": 7,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "BEUM SEUGUI - SONNAL MOMTONG MAKI - AP BAL AP TCHAGUI",
-        "position": "AP KOUBI SEUGUI - MOMTONG BARO JILEUGUI"
+        "enchainement_position": "BEUM SEUGUI - SONNAL MOMTONG MAKI - AP BAL AP TCHAGUI - AP KOUBI SEUGUI - MOMTONG BARO JILEUGUI"
       },
       {
         "id": 8,
         "tchoumbi": "TCHOUMBI",
-        "enchainement": "DWITT KOUBI SEUGUI - KEUDEURO ARE MAKI - AP TCHAGUI",
-        "position": "AP KOUBI SEUGUI - MOMTONG DOUBONN JILEUGUI"
+        "enchainement_position": "DWITT KOUBI SEUGUI - KEUDEURO ARE MAKI - AP TCHAGUI - AP KOUBI SEUGUI - MOMTONG DOUBONN JILEUGUI"
       }
     ],
     "enchainements_membres_inferieurs": [
       {
         "id": 1,
         "tchoumbi": "KYORUGUI TCHOUMBI SEUGUI",
-        "enchainement": "NELYEU TCHAGUI - BANDAL TCHAGUI DWITT TCHAGUI"
+        "enchainement_position": "NELYEU TCHAGUI - BANDAL TCHAGUI DWITT TCHAGUI"
       },
       {
         "id": 2,
         "tchoumbi": "KYORUGUI TCHOUMBI SEUGUI",
-        "enchainement": "YOP TCHAGUI - AP BAL FOURYEU TCHAGUI"
+        "enchainement_position": "YOP TCHAGUI - AP BAL FOURYEU TCHAGUI"
       },
       {
         "id": 3,
         "tchoumbi": "KYORUGUI TCHOUMBI SEUGUI",
-        "enchainement": "TUYEU DOLYEU TCHAGUI (Cible : raquette)"
+        "enchainement_position": "TUYEU DOLYEU TCHAGUI (Cible : raquette)"
       },
       {
         "id": 4,
         "tchoumbi": "KYORUGUI TCHOUMBI SEUGUI",
-        "enchainement": "Y OH DOLYEU TCHAGUI"
+        "enchainement_position": "Y OH DOLYEU TCHAGUI"
       },
       {
         "id": 5,
         "tchoumbi": "KYORUGUI TCHOUMBI SEUGUI",
-        "enchainement": "SOKKOT TCHAGUI"
+        "enchainement_position": "SOKKOT TCHAGUI"
       },
       {
         "id": 6,
         "tchoumbi": "KYORUGUI TCHOUMBI SEUGUI",
-        "enchainement": "AP BAL TUYEU AP TCHAGUI (Cible : raquette)"
+        "enchainement_position": "AP BAL TUYEU AP TCHAGUI (Cible : raquette)"
       },
       {
         "id": 7,
         "tchoumbi": "KYORUGUI TCHOUMBI SEUGUI",
-        "enchainement": "DOU BAL DANG SANG AP TCHAGUI"
+        "enchainement_position": "DOU BAL DANG SANG AP TCHAGUI"
       },
       {
         "id": 8,
         "tchoumbi": "KYORUGUI TCHOUMBI SEUGUI",
-        "enchainement": "BANDAL TCHAGUI MOM DOLYEU FOULYEU TCHAGUI"
+        "enchainement_position": "BANDAL TCHAGUI MOM DOLYEU FOULYEU TCHAGUI"
       }
     ]
   }

@@ -31,7 +31,7 @@ const Poomsae = () => {
                 }} />
                 <div className="d-flex flex-column align-items-center">
                     {belt !== null &&(
-                        <div className="w-50">
+                        <div className="w-50 m-3">
                             <Belt ceinture={belt.ceinture} barette={belt.barette} second={belt.second} dan={belt.dan}/>
                         </div>
                     )}

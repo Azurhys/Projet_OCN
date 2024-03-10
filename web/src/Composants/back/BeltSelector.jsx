@@ -12,9 +12,9 @@ const BeltSelector = ({ onBeltSelect }) => {
     //     console.log(showModal)
     // }, [selectedBelt, showModal]);
 
-    useEffect(() => {
-        setShowModal(true);
-    }, []);
+    // useEffect(() => {
+    //     setShowModal(true);
+    // }, []);
 
     // Données des ceintures
     const kidsData = [

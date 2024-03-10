@@ -41,7 +41,7 @@ const Belt = ({ceinture, barette, second, dan}) => {
   };
 
   return (
-    <div style={beltStyle}>
+    <div style={beltStyle} >
         {barette && <div style={baretteStyle} />}
         {second && <div style={secondStyle} />}
         {dan && (
