@@ -1,16 +1,24 @@
 import React, { useState } from 'react';
 import useKibon from '../../hooks/useKibons';
 import Menu from './Menu';
-
+import FlipCard from '../back/FlipCard';
+import BeltSelector from '../back/BeltSelector'
 
 const Kibon = () => {
     const { data } = useKibon();
-    const [selectedCardIndex, setSelectedCardIndex] = useState(null);
+    const [selectedCards, setSelectedCards] = useState([]);
 
     // Gérer le clic sur la carte
     const handleCardClick = (index) => {
-        // Met à jour l'index de la carte sélectionnée
-        setSelectedCardIndex(index === selectedCardIndex ? null : index);
+        // Vérifie si la carte a déjà été sélectionnée
+        const isSelected = selectedCards.includes(index);
+        if (isSelected) {
+            // Retire la carte de la liste des cartes sélectionnées si elle est déjà sélectionnée
+            setSelectedCards(selectedCards.filter((cardIndex) => cardIndex !== index));
+        } else {
+            // Ajoute la carte à la liste des cartes sélectionnées si elle n'est pas déjà sélectionnée
+            setSelectedCards([...selectedCards, index]);
+        }
     };
 
     // Si data n'est pas encore disponible, affichez un message de chargement
@@ -22,27 +30,8 @@ const Kibon = () => {
     return (
         <div>
             <Menu />
-            <h1> Kibon :</h1>
-            {data.enchainements_membres_superieurs_positions.map((item, index) => (
-                <div key={index} className={`flip-container ${index === selectedCardIndex ? 'clicked' : ''}`} onClick={() => handleCardClick(index)}>
-                    <div className='flipper'>
-                        <div className="front">
-                            Membres Supérieurs
-                        </div>
-                        <div className="back">
-                            {item.tchoumbi}: {item.enchainement_position}
-                        </div>
-                    </div>
-                </div>
-            ))}
-
-            {data.enchainements_membres_superieurs_inferieurs_positions.map((item, index) => (
-                <div key={index}>{item.tchoumbi}: {item.enchainement_position}</div>
-            ))}
-
-            {data.enchainements_membres_inferieurs.map((item, index) => (
-                <div key={index}>{item.tchoumbi}: {item.enchainement || item.enchainement_position}</div>
-            ))}
+            <BeltSelector />
+            <FlipCard data={data.enchainements_membres_superieurs_positions} titre={'MEMBRES SUPERIEURS'} /> 
         </div>
     );
 }
